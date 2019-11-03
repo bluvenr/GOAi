@@ -1,13 +1,13 @@
 <p align = "center">
 <img alt="Sym" src="https://images.gitee.com/uploads/images/2019/0301/103718_0b0df56e_1088279.png">
-<br><br>
+<br><b>
 新一代的量化系统，为交易而构建
 <br><br>
 <a title="Build Status" target="_blank"><img src="https://img.shields.io/badge/build-passing-brightgreen.svg"></a>
 <a title="Code Size" target="_blank"><img src="https://img.shields.io/badge/code%20size-7M-important.svg"></a>
 <a title="AGPLv3" target="_blank"><img src="https://img.shields.io/badge/license-AGPLv3-green.svg"></a>
 <a title="Releases" target="_blank"><img src="https://img.shields.io/badge/release-V0.1-yellow.svg"></a>
-<a title="Downloads" target="_blank"><img src="https://img.shields.io/badge/downloads-168total-blue.svg"></a>
+<a title="Downloads" target="_blank"><img src="https://img.shields.io/badge/downloads-199total-blue.svg"></a>
 </p>
 
 ## 简介
@@ -44,7 +44,7 @@ GOAi 是一款基于JAVA的开源量化交易系统，起源于公司自研量�
 
 **登录页**
 
-![index](https://images.gitee.com/uploads/images/2019/0307/164233_cff8e1f0_2076727.png)
+![index](https://images.gitee.com/uploads/images/2019/0308/174439_8af709ba_2076727.png)
 
 **首页**
 
@@ -67,17 +67,53 @@ GOAi 是一款基于JAVA的开源量化交易系统，起源于公司自研量�
 **交易所管理**
 
 ![index](https://images.gitee.com/uploads/images/2019/0307/164232_bc8a0ca2_2076727.png)
+
+**策略模板**
+
+![index](https://raw.githubusercontent.com/zq33/TP/master/%E9%A1%B5%E9%9D%A2%E6%88%AA%E5%9B%BE/%E7%AD%96%E7%95%A5%E6%A8%A1%E6%9D%BF.png)
+
+
+## 环境要求
+
+**GOAi运行环境基本要求**
+> 只需启动运行GOAi服务(策略实例、GOAi后台管理系统Web服务)情况
++ JDK(1.8及以上)
++ Linux(Centos7) 或 Windows
+
+**GOAi策略开发环境基本要求**
+> 策略开发调试基本环境，一般是在本地开发调试策略时所需要的环境要求
++ JDK(1.8及以上)
++ Gradle(4.8及以上)
++ Linux(Centos7) 或 Windows
+
+
 ## 一键启动方式
 
 **Windows**
 
-    \strategy\run_goai.bat
++ 进入strategy目录，点击运行 `run_goai.bat` 脚本文件即可
+
+**MAC**
+
++ 进入strategy目录，运行 ./run_goai.sh 命令
 
 **Linux**
+
++ 进入strategy目录，点击运行 `run_goai.sh` 脚本文件即可
+
+若是Centos7系统(更多系统支持敬请期待)，则可下载[一键安装启动脚本](https://github.com/goaiquant/GOAi/releases/tag/v0.0.1)，快速安装部署并启动：
++ 使用root身份登录Linux服务器
++ 切换到root目录：`cd /root`
++ 下载一键安装启动脚本：`wget https://github.com/goaiquant/GOAi/releases/download/v0.0.1/goai.sh`
++ 运行脚本进行安装或管理：`bash goai.sh`
++ 按照窗口提示输入对应命令序号进行操作即可
 
 ## 文档
 * [API 接口文档](https://github.com/goaiquant/GOAi/wiki/GOAi-API-接口文档)
 * [telegram 通知配置说明](https://github.com/goaiquant/GOAi/wiki/电报通知配置方法)
+
+## 使用IDEA 打开工程写策略
+* [IDE打开工程并写策略方法](http://note.youdao.com/noteshare?id=cce22cf28f89ffcba66c758c38756b13)
 
 ## 社群
 * 公众号：了解最新产品动态，听策略大师、开发小哥、设计妹子吐槽吹水。
